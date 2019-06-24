@@ -1,0 +1,26 @@
+doctype
+html(lang='en')
+  head
+    include ../includes/_metatags-favicon
+    title 'My Pug woof woof'
+    body
+
+    header
+      include ../components/_nav
+
+
+    main(data-router-wrapper)
+      block main
+        h1 default main block
+
+    footer
+      include ../components/_footer
+
+      script.
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/js/service-worker.js')
+            .then(function() { console.log('Service Worker Registered') })
+          });
+        }
+      script(crossorigin='anonymous' src='https://polyfill.io/v3/polyfill.min.js')
