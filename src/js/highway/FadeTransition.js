@@ -1,6 +1,6 @@
 import Highway from '@dogstudio/highway'
 
-class CustomTransition extends Highway.Transition {
+class FadeTransition extends Highway.Transition {
   in({ from, to, trigger, done }) {
     console.log('in')
     console.log(from)
@@ -15,4 +15,4 @@ class CustomTransition extends Highway.Transition {
   }
 }
 
-export default CustomTransition
+export default FadeTransition
