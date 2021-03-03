@@ -10,7 +10,7 @@
   "devDependencies": {
     "parcel-plugin-compress": "^1.0.10",
     "parcel-plugin-imagemin": "^4.0.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "sass": "^1.21.0"
   },
   "dependencies": {
